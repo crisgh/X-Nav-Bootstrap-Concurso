@@ -1,0 +1,82 @@
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(.4, .4, .4);
+      transform: scale3d(.4, .4, .4);
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(.4, .4, .4);
+      transform: scale3d(.4, .4, .4);
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+
+.animated {
+            background-image: url(/css/images/logo.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-top:95px;
+            margin-bottom:60px;
+            -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+
+         @-webkit-keyframes bounceInLeft {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(-500px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateX(30px);
+            }
+            80% {
+               -webkit-transform: translateX(0px);
+            }
+            100% {
+               -webkit-transform: translateX(0);
+               -webkit-transform: scale(.4, .4);
+            }
+         }
+
+         @keyframes bounceInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(-500px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateX(30px);
+            }
+            80% {
+               transform: translateX(0px);
+            }
+            100% {
+               transform: translateX(0);
+               transform: scale(1.5, 1.5);
+
+            }
+         }
+
+         .bounceInLeft {
+            -webkit-animation-name: bounceInLeft;
+            animation-name: bounceInLeft;
+         }
